@@ -1,0 +1,288 @@
+{
+    "System": {
+        "Host": {
+            "count": {
+                "output": [
+                    {
+                        "role": "ROLE_SYSTEM",
+                        "property": [
+                            "uuid",
+                            "name",
+                            "subdomain",
+                            "domain",
+                            "extension",
+                            "url",
+                            "file",
+                            "#class"
+                        ],
+                        "object": {
+                            "url": {
+                                "multiple": false,
+                                "output": [
+                                    "development",
+                                    "staging",
+                                    "production",
+                                    "test",
+                                    "replica"
+                                ]
+                            },
+                            "file": {
+                                "multiple": false,
+                                "output": [
+                                    "request"
+                                ]
+                            }
+                        }
+                    }
+                ]
+            },
+            "create": {
+                "output": [
+                    {
+                        "role": "ROLE_SYSTEM",
+                        "property": [
+                            "uuid",
+                            "name",
+                            "subdomain",
+                            "domain",
+                            "extension",
+                            "url",
+                            "file",
+                            "#class"
+                        ],
+                        "object": {
+                            "url": {
+                                "multiple": false,
+                                "output": [
+                                    "development",
+                                    "staging",
+                                    "production",
+                                    "test",
+                                    "replica"
+                                ]
+                            },
+                            "file": {
+                                "multiple": false,
+                                "output": [
+                                    "request"
+                                ]
+                            }
+                        }
+                    }
+                ]
+            },
+            "list": {
+                "output": [
+                    {
+                        "role": "ROLE_SYSTEM",
+                        "property": [
+                            "uuid",
+                            "name",
+                            "subdomain",
+                            "domain",
+                            "extension",
+                            "url",
+                            "file",
+                            "#class"
+                        ],
+                        "object": {
+                            "url": {
+                                "multiple": false,
+                                "output": [
+                                    "development",
+                                    "staging",
+                                    "production",
+                                    "test",
+                                    "replica"
+                                ]
+                            },
+                            "file": {
+                                "multiple": false,
+                                "output": [
+                                    "request"
+                                ]
+                            }
+                        }
+                    }
+                ]
+            },
+            "read": {
+                "output": [
+                    {
+                        "role": "ROLE_SYSTEM",
+                        "property": [
+                            "uuid",
+                            "name",
+                            "subdomain",
+                            "domain",
+                            "extension",
+                            "url",
+                            "file",
+                            "#class"
+                        ],
+                        "object": {
+                            "url": {
+                                "multiple": false,
+                                "output": [
+                                    "development",
+                                    "staging",
+                                    "production",
+                                    "test",
+                                    "replica"
+                                ]
+                            },
+                            "file": {
+                                "multiple": false,
+                                "output": [
+                                    "request"
+                                ]
+                            }
+                        }
+                    }
+                ]
+            },
+            "record": {
+                "output": [
+                    {
+                        "role": "ROLE_SYSTEM",
+                        "property": [
+                            "uuid",
+                            "name",
+                            "subdomain",
+                            "domain",
+                            "extension",
+                            "url",
+                            "file",
+                            "#class"
+                        ],
+                        "object": {
+                            "url": {
+                                "multiple": false,
+                                "output": [
+                                    "development",
+                                    "staging",
+                                    "production",
+                                    "test",
+                                    "replica"
+                                ]
+                            },
+                            "file": {
+                                "multiple": false,
+                                "output": [
+                                    "request"
+                                ]
+                            }
+                        }
+                    }
+                ]
+            },
+            "patch": {
+                "output": [
+                    {
+                        "role": "ROLE_SYSTEM",
+                        "property": [
+                            "uuid",
+                            "name",
+                            "subdomain",
+                            "domain",
+                            "extension",
+                            "url",
+                            "file",
+                            "#class"
+                        ],
+                        "object": {
+                            "url": {
+                                "multiple": false,
+                                "output": [
+                                    "development",
+                                    "staging",
+                                    "production",
+                                    "test",
+                                    "replica"
+                                ]
+                            },
+                            "file": {
+                                "multiple": false,
+                                "output": [
+                                    "request"
+                                ]
+                            }
+                        }
+                    }
+                ]
+            },
+            "put": {
+                "output": [
+                    {
+                        "role": "ROLE_SYSTEM",
+                        "property": [
+                            "uuid",
+                            "name",
+                            "subdomain",
+                            "domain",
+                            "extension",
+                            "url",
+                            "file",
+                            "#class"
+                        ],
+                        "object": {
+                            "url": {
+                                "multiple": false,
+                                "output": [
+                                    "development",
+                                    "staging",
+                                    "production",
+                                    "test",
+                                    "replica"
+
+                                ]
+                            },
+                            "file": {
+                                "multiple": false,
+                                "output": [
+                                    "request"
+                                ]
+                            }
+                        }
+                    }
+                ]
+            },
+            "page": {
+                "output": [
+                    {
+                        "role": "ROLE_SYSTEM",
+                        "property": [
+                            "uuid",
+                            "name",
+                            "subdomain",
+                            "domain",
+                            "extension",
+                            "url",
+                            "file",
+                            "#class"
+                        ],
+                        "object": {
+                            "url": {
+                                "multiple": false,
+                                "output": [
+                                    "development",
+                                    "staging",
+                                    "production",
+                                    "test",
+                                    "replica"
+
+                                ]
+                            },
+                            "file": {
+                                "multiple": false,
+                                "output": [
+                                    "request"
+                                ]
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,62 @@
+{
+  "Node": {
+    "#class": "System.Host",
+    "type": "object",
+    "property": [
+      {
+        "name": "name",
+        "type": "string"
+      },
+      {
+        "name": "subdomain",
+        "type": "string"
+      },
+      {
+        "name": "domain",
+        "type": "string"
+      },
+      {
+        "name": "extension",
+        "type": "string"
+      },
+      {
+        "name": "url",
+        "type": "object",
+        "property": [
+          {
+            "name": "development",
+            "type": "string"
+          },
+          {
+            "name": "staging",
+            "type": "string"
+          },
+          {
+              "name": "production",
+              "type": "string"
+          },
+          {
+            "name": "test",
+            "type": "string"
+          },
+          {
+            "name": "replica",
+            "type": "string"
+          }
+        ],
+        "multiple": false
+      },
+      {
+        "name": "uuid",
+        "type": "uuid"
+      },
+      {
+        "name": "#class",
+        "type": "string"
+      }
+    ]
+  },
+  "is.unique": [
+    "name"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+    "Node": {
+        "#class": "System.Host.Mapper",
+        "type": "object",
+        "property": [
+            {
+                "name": "source",
+                "type": "string"
+            },
+            {
+                "name": "destination",
+                "type": "string"
+            },
+            {
+                "name": "uuid",
+                "type": "uuid"
+            },
+            {
+                "name": "#class",
+                "type": "string"
+            }
+        ]
+    },
+    "is.unique": [
+        "source"
+    ]
+}

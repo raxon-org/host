@@ -1,0 +1,183 @@
+{
+  "name" : "ROLE_SYSTEM",
+  "rank" : 1,
+  "#class": "Account.Role",
+  "permission": [
+    {
+      "name": "System:Host:import",
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Host:record",
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Host:record.relation",
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Host:create",
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Host:create.many",
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Host:count",
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Host:count.relation",
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Host:commit",
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Host:delete",
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Host:delete.many",
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Host:read",
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Host:read.relation",
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Host:put",
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Host:put.many",
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Host:patch",
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Host:patch.many",
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Host:page",
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Host:page.relation",
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Host:property.delete",
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Host:list",
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Host:list.relation",
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Host:rename",
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Host:Mapper:import",
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Host:Mapper:record",
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Host:Mapper:record.relation",
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Host:Mapper:create",
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Host:Mapper:create.many",
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Host:Mapper:count",
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Host:Mapper:count.relation",
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Host:Mapper:commit",
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Host:Mapper:delete",
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Host:Mapper:delete.many",
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Host:Mapper:read",
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Host:Mapper:read.relation",
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Host:Mapper:put",
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Host:Mapper:put.many",
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Host:Mapper:patch",
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Host:Mapper:patch.many",
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Host:Mapper:page",
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Host:Mapper:page.relation",
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Host:Mapper:property.delete",
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Host:Mapper:list",
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Host:Mapper:list.relation",
+      "#class": "Account.Permission"
+    },
+    {
+      "name": "System:Host:Mapper:rename",
+      "#class": "Account.Permission"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "System": {
+    "Route": [
+      {
+        "#class": "System.Route",
+        "name": "raxon-org-cli-host",
+        "path": "raxon\/host",
+        "controller": "Package.Raxon.Org.Host.Controller.Cli.run",
+        "request": {
+          "language": "en"
+        },
+        "priority": 1001,
+        "method": [
+          "CLI"
+        ]
+      }
+    ]
+  }
+}

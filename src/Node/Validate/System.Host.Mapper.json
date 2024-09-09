@@ -1,0 +1,89 @@
+{
+    "System": {
+        "Host": {
+            "Mapper": {
+                "create": {
+                    "validate": {
+                        "uuid": [
+                            {
+                                "is.uuid": true
+                            }
+                        ],
+                        "source": [
+                            {
+                                "is.unique": {
+                                    "class": "System.Host.Mapper",
+                                    "attribute": [
+                                        "source"
+                                    ]
+                                }
+                            },
+                            {
+                                "string.length" : ">=1"
+                            }
+                        ],
+                        "destination": [
+                            {
+                                "string.length" : ">=1"
+                            }
+                        ]
+                    }
+                },
+                "put": {
+                    "validate": {
+                        "uuid": [
+                            {
+                                "is.uuid": true
+                            }
+                        ],
+                        "source": [
+                            {
+                                "is.unique": {
+                                    "class": "System.Host.Mapper",
+                                    "attribute": [
+                                        "source"
+                                    ]
+                                }
+                            },
+                            {
+                                "string.length" : ">=1"
+                            }
+                        ],
+                        "destination": [
+                            {
+                                "string.length" : ">=1"
+                            }
+                        ]
+                    }
+                },
+                "patch": {
+                    "validate": {
+                        "uuid": [
+                            {
+                                "is.uuid": true
+                            }
+                        ],
+                        "source": [
+                            {
+                                "is.unique": {
+                                    "class": "System.Host.Mapper",
+                                    "attribute": [
+                                        "source"
+                                    ]
+                                }
+                            },
+                            {
+                                "string.length" : ">=1"
+                            }
+                        ],
+                        "destination": [
+                            {
+                                "string.length" : ">=1"
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}
