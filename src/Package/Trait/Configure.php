@@ -26,7 +26,7 @@ trait Configure {
         $object = $this->object();
         if($object->config(Config::POSIX_ID) !== 0){
             $exception = new Exception('Only root can configure host add...');
-            Event::trigger($object, 'raxon.org.host.configure.name.add', [
+            Event::trigger($object, 'raxon.host.configure.name.add', [
                 'options' => $options,
                 'exception' => $exception
             ]);
@@ -44,7 +44,7 @@ trait Configure {
         }
         if($host === false){
             $exception = new Exception('Host cannot be empty...');
-            Event::trigger($object, 'raxon.org.host.configure.name.add', [
+            Event::trigger($object, 'raxon.host.configure.name.add', [
                 'options' => $options,
                 'exception' => $exception
             ]);
@@ -55,7 +55,7 @@ trait Configure {
             $data = explode("\n", File::read($url));
             foreach($data as $nr => $row){
                 if(stristr($row, $host) !== false){
-                    Event::trigger($object, 'raxon.org.host.configure.name.add', [
+                    Event::trigger($object, 'raxon.host.configure.name.add', [
                         'options' => $options,
                         'is_found' => true
                     ]);
@@ -65,7 +65,7 @@ trait Configure {
             $data = $ip . "\t" . $host . "\n";
             $append = File::append($url, $data);
             echo 'Ip: ' . $ip  .' Host: ' . $host . ' added.' . "\n";
-            Event::trigger($object, 'raxon.org.host.configure.name.add', [
+            Event::trigger($object, 'raxon.host.configure.name.add', [
                 'options' => $options,
                 'is_added' => true
             ]);
@@ -83,7 +83,7 @@ trait Configure {
         $object = $this->object();
         if ($object->config(Config::POSIX_ID) !== 0) {
             $exception = new Exception('Only root can configure host add...');
-            Event::trigger($object, 'raxon.org.host.configure.name.delete', [
+            Event::trigger($object, 'raxon.host.configure.name.delete', [
                 'options' => $options,
                 'exception' => $exception
             ]);
@@ -98,7 +98,7 @@ trait Configure {
         }
         if($host === false){
             $exception = new Exception('Host cannot be empty...');
-            Event::trigger($object, 'raxon.org.host.configure.name.host', [
+            Event::trigger($object, 'raxon.host.configure.name.host', [
                 'options' => $options,
                 'exception' => $exception
             ]);
@@ -125,7 +125,7 @@ trait Configure {
         $object = $this->object();
         if($object->config(Config::POSIX_ID) !== 0){
             $exception = new Exception('Only root can configure host add...');
-            Event::trigger($object, 'raxon.org.host.configure.name.delete', [
+            Event::trigger($object, 'raxon.host.configure.name.delete', [
                 'options' => $options,
                 'exception' => $exception
             ]);
@@ -140,7 +140,7 @@ trait Configure {
         }
         if($host === false){
             $exception = new Exception('Host cannot be empty...');
-            Event::trigger($object, 'raxon.org.host.configure.name.delete', [
+            Event::trigger($object, 'raxon.host.configure.name.delete', [
                 'options' => $options,
                 'exception' => $exception
             ]);
