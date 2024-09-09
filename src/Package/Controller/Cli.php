@@ -1,32 +1,32 @@
 <?php
 
-namespace Package\Raxon\Org\Host\Controller;
+namespace Package\Raxon\Host\Controller;
 
-use Raxon\Org\App;
-use Raxon\Org\Config;
+use Raxon\App;
+use Raxon\Config;
 
-use Raxon\Org\Module\Core;
-use Raxon\Org\Module\Controller;
-use Raxon\Org\Module\Data;
-use Raxon\Org\Module\Dir;
-use Raxon\Org\Module\File;
+use Raxon\Module\Core;
+use Raxon\Module\Controller;
+use Raxon\Module\Data;
+use Raxon\Module\Dir;
+use Raxon\Module\File;
 
 use Exception;
 
-use Raxon\Org\Exception\LocateException;
-use Raxon\Org\Exception\ObjectException;
-use Raxon\Org\Exception\UrlEmptyException;
-use Raxon\Org\Exception\UrlNotExistException;
+use Raxon\Exception\LocateException;
+use Raxon\Exception\ObjectException;
+use Raxon\Exception\UrlEmptyException;
+use Raxon\Exception\UrlNotExistException;
 
 class Cli extends Controller {
     const DIR = __DIR__ . '/';
     const MODULE_INFO = 'Info';
     const INFO = [
-        '{{binary()}} raxon_org/host                    | Host options',
-        '{{binary()}} raxon_org/host setup              | Host setup',
-        '{{binary()}} raxon_org/host name add           | /etc/hosts add',
-        '{{binary()}} raxon_org/host name delete        | /etc/hosts delete',
-        '{{binary()}} raxon_org/host name has           | /etc/hosts has',
+        '{{binary()}} raxon/host                    | Host options',
+        '{{binary()}} raxon/host setup              | Host setup',
+        '{{binary()}} raxon/host name add           | /etc/hosts add',
+        '{{binary()}} raxon/host name delete        | /etc/hosts delete',
+        '{{binary()}} raxon/host name has           | /etc/hosts has',
     ];
 
     /**

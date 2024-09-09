@@ -1,17 +1,17 @@
 <?php
-namespace Package\Raxon\Org\Host\Trait;
+namespace Package\Raxon\Host\Trait;
 
-use Raxon\Org\Config;
+use Raxon\Config;
 
-use Raxon\Org\Exception\FileWriteException;
-use Raxon\Org\Module\Core;
-use Raxon\Org\Module\Event;
-use Raxon\Org\Module\File;
+use Raxon\Exception\FileWriteException;
+use Raxon\Module\Core;
+use Raxon\Module\Event;
+use Raxon\Module\File;
 
 use Exception;
 
-use Raxon\Org\Exception\FileAppendException;
-use Raxon\Org\Exception\ObjectException;
+use Raxon\Exception\FileAppendException;
+use Raxon\Exception\ObjectException;
 
 trait Configure {
 
