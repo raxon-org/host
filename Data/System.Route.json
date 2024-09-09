@@ -5,7 +5,7 @@
         "#class": "System.Route",
         "name": "raxon-org-cli-host",
         "path": "raxon\/host",
-        "controller": "Package.Raxon.Org.Host.Controller.Cli.run",
+        "controller": "Package.Raxon.Host.Controller.Cli.run",
         "request": {
           "language": "en"
         },
