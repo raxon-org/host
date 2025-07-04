@@ -39,8 +39,8 @@ trait System {
             'domain' => $options->domain,
             'extension' => $options->extension,
             'url' => (object) [
-                'development' => 'https://' . $options->domain . '.local/',
-                'production' => 'https://' . $options->domain . '.' . $options->extension,
+                'development' => $options->domain . '.local/',
+                'production' => $options->domain . '.' . $options->extension,
             ]
         ];
         $exist = $node->record($class, $node->role_system(), [
