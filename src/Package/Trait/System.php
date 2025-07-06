@@ -20,21 +20,22 @@ trait System {
         if(!property_exists($options, 'domain')){
             throw new Exception('Host create error: domain is required');
         }
-        $explode = explode('.', $options->domain);
-        if(count($explode) < 2){
-            throw new Exception('Host create error: domain must contain at least a name and an extension');
-        }
-        if(count($explode) > 2){
-            throw new Exception('Host create error: only domain with at least a name and an extension');
-        }
-        $force = $options->force ?? false;
-        $options->name = ucfirst($explode[0]) . '.' . ucfirst($explode[1]);
-        $options->extension = $explode[1];  
-        $options->domain = $explode[0];
         $object = $this->object();
         $node = new Node($object);
         $class = 'System.Host';
-        $record = (object) [
+        $explode = explode('.', $options->domain);
+        $count = count($explode);
+        if($count < 2){
+            throw new Exception('Host create error: domain must contain at least a name and an extension');
+        }               
+        elseif($count > 3){
+            throw new Exception('Host create error: domain must not contain more than a name, an extension and an optional subdomain.');
+        }
+        elseif($count === 2){
+            $options->name = ucfirst($explode[0]) . '.' . ucfirst($explode[1]);
+            $options->extension = $explode[1];  
+            $options->domain = $explode[0];
+            $record = (object) [
             'name' => $options->name,
             'domain' => $options->domain,
             'extension' => $options->extension,
@@ -43,6 +44,24 @@ trait System {
                 'production' => $options->domain . '.' . $options->extension,
             ]
         ];
+        } 
+        elseif($count === 3){
+            $options->name = ucfirst($explode[0]) . '.' . ucfirst($explode[1]) . '.' . ucfirst($explode[2]);
+            $options->extension = $explode[2];
+            $options->domain = $explode[1];
+            $options->subdomain = $explode[0];
+            $record = (object) [
+            'name' => $options->name,
+            'domain' => $options->domain,
+            'subdomain' => $options->subdomain,
+            'extension' => $options->extension,
+            'url' => (object) [
+                'development' => $options->subdomain . '.' . $options->domain . '.local/',
+                'production' => $options->subdomain . '.' . $options->domain . '.' . $options->extension,
+            ]
+        ];
+        }
+        $force = $options->force ?? false;                
         $exist = $node->record($class, $node->role_system(), [
             'where' => [
                 [
