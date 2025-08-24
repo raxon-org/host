@@ -22,8 +22,7 @@ class Cli extends Controller {
     const DIR = __DIR__ . '/';
     const MODULE_INFO = 'Info';
     const INFO = [
-        '{{binary()}} raxon/host                    | Host options',
-        '{{binary()}} raxon/host setup              | Host setup',
+        '{{binary()}} raxon/host                    | Host options',        
         '{{binary()}} raxon/host name add           | /etc/hosts add',
         '{{binary()}} raxon/host name delete        | /etc/hosts delete',
         '{{binary()}} raxon/host name has           | /etc/hosts has',
